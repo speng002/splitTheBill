@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* this is not working. I want the item to be at the center of the page. */
+body{
+    background-color: green;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+
+#person1-container{
+    /* max-height: fit-content;
+    max-width:fit-content;
+    /* This centers the width but not the height */
+    /* margin: auto; */ */
+}
+
+/* this works */
+#person1-container{
+    background-color: purple;
+}
+
+#person1-itemprice-container{
+    /* padding-top: 200px; */
+}
+
+/* this works as well */
+#person1-name{
+    /* background-color: blue; */
+}
+
+/* center text for all inputs */
+input{
+    text-align: center;
+}
