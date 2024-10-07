@@ -4,24 +4,36 @@
   box-sizing: border-box;
 }
 
+h1{
+    text-align: center;
+}
+
 /* this is not working. I want the item to be at the center of the page. */
 body{
     background-color: green;
+    margin: 0;
 }
-
+/* This centers but not vertically */
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: blue;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue; */
+    
 }
 
 
 #person1-container{
-    /* max-height: fit-content;
-    max-width:fit-content;
-    /* This centers the width but not the height */
-    /* margin: auto; */ */
+   /* margin: auto; */
 }
 
 /* this works */
