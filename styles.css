@@ -6,6 +6,21 @@
 
 h1{
     text-align: center;
+    background-color: brown;
+}
+
+/* this works */
+h2{
+    text-align: center;
+    background-color: red;
+    margin: 0;
+}
+
+/* why is it not matching the other div container */
+h3{
+    text-align: center;
+    margin: 0;
+    height: 100%;
 }
 
 /* this is not working. I want the item to be at the center of the page. */
@@ -15,19 +30,18 @@ body{
 }
 /* This centers but not vertically */
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    height: 50%;
-    width: 50%;
-    margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+    /* Why is there still some blue with min-width */
 
 
     /* display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue; */
+    background-color: blue;
     
 }
 
@@ -36,9 +50,21 @@ main{
    /* margin: auto; */
 }
 
+.person-namecontainer{
+    background-color: green;
+    margin-bottom: 21px;
+}
+
+/* Maybe need last child */
+
 /* this works */
 #person1-container{
     background-color: purple;
+    min-width: 354px;
+    /* Don't need padding */
+    /* padding: 21px; */
+    /* this works */
+    /* width: 50%; */
 }
 
 #person1-itemprice-container{
@@ -46,9 +72,10 @@ main{
 }
 
 /* this works as well */
-#person1-name{
+.person-name{
     /* background-color: blue; */
 }
+
 
 /* center text for all inputs */
 input{

@@ -7,17 +7,27 @@
     <title>Bill Splitting App</title>
 </head>
 <body>
-    <h1>Bill Splitting App</h1>
 <main>
+<h1>Bill Splitting App</h1>
 <div id="person1-container">
-    <div id="person1-namecontainer">
-        <input id="person1-name" placeholder="person's name"></input> 
+    <div class="person-namecontainer">
+        <h2>Person nth</h2>
+        <input class="person-name" id="person1-name" placeholder="person's name"></input> 
+    
+        <div id="person1-itemprice-container">
+            <input id="person1-item-name1" placeholder="item name"></input><input id="person1-item-price1" placeholder="$9.99"></input> 
+        </div>
     </div>
-    <div id="person1-itemprice-container">
-        <input id="person1-item-name1" placeholder="item name"></input><input id="person1-item-price1" placeholder="$9.99"></input> 
+    <div class="person-namecontainer">
+        <h2>Person nth</h2>
+        <!-- I dont know how I can auto generate this person-namecontainer and keep fixing the id(ex. person1, person2) -->
+        <input class="person-name" id="person2-name" placeholder="person's name"></input> 
+        <div id="person1-itemprice-container">
+            <input id="person1-item-name1" placeholder="item name"></input><input id="person1-item-price1" placeholder="$9.99"></input> 
+        </div>
     </div>
 </div>
-
+<!-- maybe have this on a 2nd page? -->
 <!-- Why is it going to the side -->
 <!-- <div id="person2-container">
     <div id="person2-namecontainer">
