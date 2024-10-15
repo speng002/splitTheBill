@@ -4,6 +4,27 @@
   box-sizing: border-box;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.left-text-indent{
+    text-indent: 25px;
+}
+
+/* This actually worked */
+.right-text-indent{
+    padding-right: 25px;
+}
+
+.small-font {
+    font-size: small;
+}
+
+.top-border{
+    border-top: 2px solid red;
+}
+
 h1{
     text-align: center;
     background-color: brown;
@@ -60,7 +81,8 @@ main{
 /* this works */
 #person1-container{
     background-color: purple;
-    min-width: 354px;
+    /* updating this fix the container gap */
+    min-width: 340.0px;
     /* Don't need padding */
     /* padding: 21px; */
     /* this works */
@@ -80,4 +102,70 @@ main{
 /* center text for all inputs */
 input{
     text-align: center;
+}
+
+.display-window{
+    background-color: white;
+    height: 21px;
+    width: 170.0px;
+    text-align: right;
+}
+
+.subtotal-display-window{
+    /* background-color: white; */
+    height: 21px;
+    width: 170.0px;
+    text-align: right;
+    font-size: small;
+}
+
+.subtotal-tax{
+    font-size: small;
+    height: 17px;
+    width: 170.0px;
+}
+
+/* this works. background color changes on top */
+#subtotal-display{
+    background-color: lightblue;
+}
+
+#tax-display{
+
+}
+
+#total-display{
+    background-color: lightblue;
+}
+
+/* Added a divider */
+/* Maybe I can just make a class called border */
+#subtotal-container{
+    height: 21px;
+    /* background-color: red; */
+}
+
+/* It looks like background color is showing under */
+#tax-container{
+    background-color: red;
+    height: 21px;
+}
+
+.total{
+    /* background-color: blue; */
+    height: 21px;
+    width: 170.0px;
+    font-size: large;
+    /* Look into text-indent */
+    /* text-indent: ; */
+}
+
+.calc-by-person-container{
+    /* inline-block does not work. only flex */
+   display: flex;
+}
+
+/* Receipt Container stuff */
+#receipt-container{
+    background-color: green;
 }
