@@ -12,17 +12,20 @@
     text-indent: 25px;
 }
 
-/* This actually worked */
+
+
+/* margin-right is not working*/
+/* text-align: center is okay */
 .right-text-indent{
-    padding-right: 25px;
+    text-align: center;
 }
 
 .small-font {
-    font-size: small;
+    font-size: x-small;
 }
 
 .top-border{
-    border-top: 2px solid red;
+    border-top: 2px solid black;
 }
 
 h1{
@@ -41,7 +44,6 @@ h2{
 h3{
     text-align: center;
     margin: 0;
-    height: 100%;
 }
 
 /* this is not working. I want the item to be at the center of the page. */
@@ -106,23 +108,22 @@ input{
 
 .display-window{
     background-color: white;
-    height: 21px;
-    width: 170.0px;
-    text-align: right;
+    text-align: center
+    /* text-align: right; */
 }
-
+/* Idk if this is working anymore */
+/* using class display-window */
 .subtotal-display-window{
     /* background-color: white; */
-    height: 21px;
-    width: 170.0px;
     text-align: right;
-    font-size: small;
+    font-size: x-small;
+    background-color: purple;
 }
 
+/* 40px text-indent looks good to me. Should I use a %? */
 .subtotal-tax{
-    font-size: small;
-    height: 17px;
-    width: 170.0px;
+    font-size: x-small;
+    text-indent: 40px;
 }
 
 /* this works. background color changes on top */
@@ -141,28 +142,33 @@ input{
 /* Added a divider */
 /* Maybe I can just make a class called border */
 #subtotal-container{
-    height: 21px;
     /* background-color: red; */
 }
 
 /* It looks like background color is showing under */
 #tax-container{
     background-color: red;
-    height: 21px;
 }
 
 .total{
     /* background-color: blue; */
-    height: 21px;
-    width: 170.0px;
     font-size: large;
     /* Look into text-indent */
     /* text-indent: ; */
 }
 
+/* line 152 - 164 works without indents */
 .calc-by-person-container{
     /* inline-block does not work. only flex */
    display: flex;
+}
+
+.left-div{
+    flex: 1;
+}
+
+.right-div{
+    flex: 1;
 }
 
 /* Receipt Container stuff */
