@@ -3,26 +3,27 @@
 *::after {
   box-sizing: border-box;
 }
-
-.bold{
+/* don't need it right now */
+/* .bold{
     font-weight: bold;
-}
+} */
 
 .left-text-indent{
     text-indent: 25px;
 }
 
-
+/* name classes for what they are */
 
 /* margin-right is not working*/
 /* text-align: center is okay */
-.right-text-indent{
+/* .right-text-indent{
     text-align: center;
-}
+} */
 
-.small-font {
+/* idk if i will need this yet */
+/* .small-font {
     font-size: x-small;
-}
+} */
 
 .top-border{
     border-top: 2px solid black;
@@ -106,29 +107,23 @@ input{
     text-align: center;
 }
 
+/* Do I need this to work */
 .display-window{
-    background-color: white;
-    text-align: center
-    /* text-align: right; */
-}
-/* Idk if this is working anymore */
-/* using class display-window */
-.subtotal-display-window{
-    /* background-color: white; */
-    text-align: right;
-    font-size: x-small;
-    background-color: purple;
+    background-color: lightblue;
+    text-align: center;
 }
 
+
 /* 40px text-indent looks good to me. Should I use a %? */
-.subtotal-tax{
-    font-size: x-small;
+/* when I text-indent, box size does not change */
+.receipt-calc-label{
     text-indent: 40px;
 }
 
+/* These are ids that I should only use for Javascript */
 /* this works. background color changes on top */
 #subtotal-display{
-    background-color: lightblue;
+
 }
 
 #tax-display{
@@ -136,7 +131,7 @@ input{
 }
 
 #total-display{
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 /* Added a divider */
@@ -147,12 +142,12 @@ input{
 
 /* It looks like background color is showing under */
 #tax-container{
-    background-color: red;
+    /* background-color: red; */
 }
 
 .total{
     /* background-color: blue; */
-    font-size: large;
+    /* font-size: large; */
     /* Look into text-indent */
     /* text-indent: ; */
 }

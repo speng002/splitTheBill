@@ -7,30 +7,33 @@
     <title>Bill Splitting App</title>
 </head>
 <body>
+    <h1>Bill Splitting App</h1>
 <main>
-<h1>Bill Splitting App</h1>
 <div id="person1-container">
     <div class="person-namecontainer">
         <h2>Person nth</h2>
         <input class="person-name" id="person1-name" placeholder="person's name"></input> 
-    
-        <div id="person1-itemprice-container">
+    <!-- Fix id for these containers "person1-itemprice-container" -->
+        <div id="person1-itemprice1-container">
             <input id="person1-item-name1" placeholder="item name"></input><input id="person1-item-price1" placeholder="$9.99"></input> 
         </div>
-        <div id="person1-itemprice-container">
+        <div id="person1-itemprice2-container">
             <input id="person1-item-name2" placeholder="item name"></input><input id="person1-item-price2" placeholder="$9.99"></input> 
+        </div>
+        <div id="person1-itemprice3-container">
+            <input id="person1-item-name3" placeholder="item name"></input><input id="person1-item-price3" placeholder="$9.99"></input> 
         </div>
         <div class="calc-by-person-container top-border" id="person1-subtotal-container">
             <!-- how do I make 2 divs side by side? -->
-            <div class="subtotal-tax left-div">SubTotal</div><div class="display-window right-text-indent right-div small-font" id="person1-subtotal-display">hello</div>
+            <div class="receipt-calc-label left-div">SubTotal</div><div class="display-window right-text-indent right-div small-font" id="person1-subtotal-display">hello</div>
         </div>
         <div class="calc-by-person-container" id="person1-tax-container">
             <!-- how do I make 2 divs side by side? -->
-            <div class="subtotal-tax left-div">Tax</div><div class="display-window right-text-indent right-div small-font" id="person1-tax-display">hello</div>
+            <div class="receipt-calc-label left-div">Tax</div><div class="display-window right-text-indent right-div small-font" id="person1-tax-display">hello</div>
         </div>
         <div class="calc-by-person-container" id="person1-tip-container">
             <!-- how do I make 2 divs side by side? -->
-            <div class="subtotal-tax left-div">Tip</div><div class="display-window right-text-indent right-div small-font" id="person1-tip-display">hello</div>
+            <div class="receipt-calc-label left-div">Tip</div><div class="display-window right-text-indent right-div small-font" id="person1-tip-display">hello</div>
         </div>
         <div class="calc-by-person-container">
             <!-- how do I make 2 divs side by side? -->
@@ -41,12 +44,13 @@
         <h2>Person nth</h2>
         <!-- I dont know how I can auto generate this person-namecontainer and keep fixing the id(ex. person1, person2) -->
         <input class="person-name" id="person2-name" placeholder="person's name"></input> 
-        <div id="person1-itemprice-container">
-            <input id="person1-item-name1" placeholder="item name"></input><input id="person1-item-price1" placeholder="$9.99"></input> 
+        <div id="person2-itemprice-container">
+            <input id="person2-item-name1" placeholder="item name"></input><input id="person2-item-price1" placeholder="$9.99"></input> 
         </div>
     </div>
 </div>
 <!-- Don't know if I will use it yet -->
+ <!-- I need ids for these inputs -->
 <div id="receipt-container">
     <h2>Receipt</h2>
     <div id="product1-container">
@@ -60,19 +64,19 @@
     </div>
     <div class="calc-by-person-container top-border" id="subtotal-container">
         <!-- how do I make 2 divs side by side? -->
-        <div class="subtotal-tax left-div">SubTotal</div><div class="display-window right-text-indent right-div small-font" id="subtotal-display">hello</div>
+        <div class="receipt-calc-label left-div">SubTotal</div><input class="right-div" placeholder="hello" id="subtotal-display"></input>
     </div>
     <div class="calc-by-person-container" id="tax-container">
         <!-- how do I make 2 divs side by side? -->
-        <div class="subtotal-tax left-div">Tax</div><div class="display-window right-text-indent right-div small-font" id="tax-display">hello</div>
+        <div class="receipt-calc-label left-div">Tax</div><input class="right-div" placeholder="hello" id="tax-display"></input>
     </div>
     <div class="calc-by-person-container" id="tip-container">
         <!-- how do I make 2 divs side by side? -->
-        <div class="subtotal-tax left-div">Tip</div><div class="display-window right-text-indent right-div small-font" id="tip-display">hello</div>
+        <div class="receipt-calc-label left-div">Tip</div><input class="right-div" placeholder="hello" id="tip-display"></input>
     </div>
     <div class="calc-by-person-container" id="total-container">
         <!-- how do I make 2 divs side by side? -->
-        <div class="total bold left-text-indent left-div">Total</div><div class="display-window bold right-text-indent right-div" id="total-display">hello</div>
+        <div class="total left-text-indent left-div">Total</div><input class="right-div" placeholder="hello" id="total-display"></input>
     </div>
 </div>
 <!-- maybe have this on a 2nd page? -->
