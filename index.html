@@ -11,7 +11,8 @@
 <main>
 <div id="person1-container">
     <div class="person-namecontainer">
-        <h2>Person nth</h2>
+        <!-- Should I move it to the right? button sizing looks weird-->
+        <h2>Person nth <button id="remove-person-button">Remove people</button>/<button id="remove-person-button">Add People</button></h2>
         <input class="person-name" id="person1-name" placeholder="person's name"></input> 
     <!-- Fix id for these containers "person1-itemprice-container" -->
         <div id="person1-itemprice1-container">
@@ -77,6 +78,9 @@
     <div class="calc-by-person-container" id="total-container">
         <!-- how do I make 2 divs side by side? -->
         <div class="total left-text-indent left-div">Total</div><input class="right-div" placeholder="hello" id="total-display"></input>
+    </div>
+    <div class="calculate-container">
+        <button id="calculate-button">calculate</button>
     </div>
 </div>
 <!-- maybe have this on a 2nd page? -->

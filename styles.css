@@ -170,3 +170,10 @@ input{
 #receipt-container{
     background-color: green;
 }
+
+.calculate-container{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
